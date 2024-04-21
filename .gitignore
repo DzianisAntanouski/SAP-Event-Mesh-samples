@@ -1,0 +1,9 @@
+# user credentionals
+CF/
+cap-event-mesh/.cdsrc-private.json
+event-mesh-http-manager/auth/userData.js
+
+# node_modules
+event-mesh-consumer/node_modules
+cap-event-mesh/node_modules
+event-mesh-http-manager/node_modules
