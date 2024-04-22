@@ -1,4 +1,4 @@
-# Project Title
+# Event Mesh practical tutorial
 
 ## Overview
 
