@@ -1,5 +1,11 @@
 const axios = require("axios");
 const https = require("https");
+// you can find this data in the service key, userData should return the object like this {
+//   clientid: "clientid",
+//   clientsecret: "clientsecret",
+//   granttype: "client_credentials",
+//   tokenendpoint: "tokenendpoint",
+// }; 
 const userData = require("./userData");
 
 const agent = new https.Agent({
@@ -24,7 +30,6 @@ const getBearer = async function (data) {
     },
     httpsAgent: agent,
   });
-  //   console.log(`Bearer ${response.data.access_token}`);
   return `Bearer ${response.data.access_token}`;
 }.bind(this);
 module.exports = getBearer;
